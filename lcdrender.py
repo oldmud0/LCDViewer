@@ -54,7 +54,7 @@ class LCDCanvas:
 	
 	def render_cursor(self):
 		t = time.clock() % 1
-		if (self.lcd.c or True) and (0 <= t <= .25 or .5 <= t <= .75): # draw cursor
+		if self.lcd.c and (not self.lcd.b or self.lcd.b and 0 <= t <= .25 or .5 <= t <= .75): # draw cursor
 			if not self.cursor_drawn:
 				s = self.scale
 				r = 0
