@@ -1,6 +1,8 @@
 # LCD Monitor
 This is a fully functional LCD monitor for Hitachi HD44780 controller, written in Python 3.
 
+![Screenshot](http://i.imgur.com/z5tbiTx.png)
+
 Every LCD packet sent via serial conforms to the following format:
 
 Byte|Value                 |Description
